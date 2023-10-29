@@ -27,11 +27,11 @@ class Classifier:
 
     model_name = "Voting Classifier"
 
-    def __init__(self, voting: str = "hard"):
+    def __init__(self, voting: str = "soft"):
         """Construct a new Voting Classifier.
 
         Args:
-            voting (str): {‘hard’, ‘soft’}, default=’hard’ If ‘hard’, uses predicted class labels for majority rule
+            voting (str): {‘hard’, ‘soft’}, default=’soft’ If ‘hard’, uses predicted class labels for majority rule
             voting. Else if ‘soft’, predicts the class label based on the argmax of the sums of the predicted
             probabilities, which is recommended for an ensemble of well-calibrated classifiers.
         """
