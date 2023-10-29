@@ -1,0 +1,11 @@
+{
+  "num_trials": 2,
+  "hyperparameters": [
+    {
+      "name": "voting",
+      "short_desc": "If ‘hard’, uses predicted class labels for majority rule voting. Else if ‘soft’, predicts the class label based on the argmax of the sums of the predicted probabilities, which is recommended for an ensemble of well-calibrated classifiers.",
+      "type": "categorical",
+      "categories": ["hard", "soft"]
+    }
+  ]
+}
